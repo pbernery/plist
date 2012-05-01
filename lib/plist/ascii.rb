@@ -150,7 +150,7 @@ module Plist
         error("unexpected end-of-string")
       else
         puts "returning string" if @debug
-        scan(/\w+/)
+        scan(/[\w\\.\/]+/)
       end
     end
 
